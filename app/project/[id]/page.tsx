@@ -6,6 +6,7 @@ import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 // 项目详情数据（实际项目中应从 API 或 CMS 获取）
 
+
 // 右侧导航锚点
 const navAnchors = [
   { id: "introduction", label: "INTRODUCTION", labelZh: "介绍" },

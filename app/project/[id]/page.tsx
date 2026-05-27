@@ -15,7 +15,7 @@ const navAnchors = [
   { id: "honor", label: "HONOR", labelZh: "荣誉" },
   { id: "thanks", label: "THANKS", labelZh: "致谢" },
 ];
-
+export const runtime = 'edge';  
 export default function ProjectDetailPage({
   params,
 }: {

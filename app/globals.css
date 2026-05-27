@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "HanYiQiHei";
+  src: url("../assets/fonts/HanYiQiHei-55Jian-Regular-2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-hanyi {
+  font-family: "HanYiQiHei", sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* 重置为浏览器默认字体 */
+html,
+body {
+  font-family: initial;
+}
+
+/* 全局 p 标签样式 */
+@layer base {
+  p {
+    @apply leading-loose;
+  }
+}
+
+/* 自定义动画 */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out;
+}
+
+.about-h1 {
+  font-size: 24px;
+}
+.ant-image{
+  width: 100%;
+  height: 100%;
+}
+.ant-image img{
+  height: 100% !important;
+
+  width: 100%;
+}
+.project_detail #honor a{
+ text-decoration: underline !important;
+}
+
+.project-doc-frame {
+  position: relative;
+  border: 3px solid #4aa9ff;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.08);
+}
+
+.project-doc-carousel {
+  position: relative;
+}
+
+.project-doc-carousel .project-doc-carousel-dots {
+  bottom: 10px;
+}
+
+.project-doc-carousel .project-doc-carousel-dots li {
+  width: auto;
+  margin-inline: 3px;
+}
+
+.project-doc-carousel .project-doc-carousel-dots li button {
+  width: 9px;
+  height: 9px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.9);
+}
+
+.project-doc-carousel .project-doc-carousel-dots li.slick-active button {
+  background: #ffffff;
+  border-color: #64748b;
+}
+
+.link{
+  color: #336df5 !important;
+}

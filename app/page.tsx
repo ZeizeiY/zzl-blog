@@ -1,4 +1,5 @@
 "use client";
+import AboutPage from "./about/page";
 export default function Home() {
-  return <div>Hello word</div>;
+  return <AboutPage />;
 }

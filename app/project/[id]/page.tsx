@@ -5,7 +5,6 @@ import { Carousel, Image } from "antd";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 // 项目详情数据（实际项目中应从 API 或 CMS 获取）
-export const runtime = 'edge';  
 
 
 // 右侧导航锚点
